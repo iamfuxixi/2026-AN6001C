@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>预测结果</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>预测的 DBS 股价：{{ r }}</h2>
+        <form action="/" method="get">
+            <button type="submit">返回首页</button>
+        </form>
+    </div>
+</body>
+</html>
